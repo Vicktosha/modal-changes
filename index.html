@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Модальное окно</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+</head>
+<body>
+    <button class="open">Открыть</button>
+    <dialog class="modal">
+        <div class="modal-inner">
+            <form action="#" class="modal-form" id="form">
+                <h3 class="modal-title">Стать партнёром проекта</h3>
+                    <div class="modal-top">
+                        <div class="modal-left">
+                            <div class="required-wrap">
+                                <label class="label-req" for="input">&#10033;</label>
+                                <input name="input" type="text" class="input required" placeholder="Название организации" required>
+                            </div>
+                            <div class="required-wrap">
+                                <label class="label-req" for="input">&#10033;</label>
+                                <input type="tel" class="input required" placeholder="Телефон" required>
+                            </div>
+                            <div class="required-wrap">
+                                <label class="label-req" for="input">&#10033;</label>
+                                <input type="email" class="input required" placeholder="E-mail" required>
+                            </div>
+                        </div>
+                        <div class="modal-right">
+                            <span class="title-logo">Логотип (jpeg, png)</span>
+                           <div class="logo">
+                            <span class="choice">Выберите<br>файл</span>
+                            <div class="delete">
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <input type="file" placeholder="Выберите файл" required>
+                           </div>
+                        </div>
+                    </div>
+
+                        <div class="__select" data-state="">
+                                <label class="label-req" for="input">&#10033;</label>
+                          <input class="__select__title input" data-default="Option 0" placeholder="Направление">
+                          <img class="arrow" src="img/down.svg" alt="arrow" data-state="">
+                            <!-- <span class="red-star">&#10033;</span> -->
+                        </input>
+                          <div class="__select__content">
+                            <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked />
+                            <label for="singleSelect0" class="__select__label"></label>
+                            <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                            <label for="singleSelect1" class="__select__label">Option 1</label>
+                            <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" disabled />
+                            <label for="singleSelect2" class="__select__label">Option 2 (disabled)</label>
+                            <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
+                            <label for="singleSelect3" class="__select__label">Option 3</label>
+                            <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                            <label for="singleSelect4" class="__select__label">Option 4</label>
+                          </div>
+                        </div>
+
+                    <div class="optional">
+                        <input name="site" type="text" class="input">
+                        <label for="site">
+                            <img src="img/global.png" alt="global">
+                        </label>
+                    </div>
+                    <div class="optional">
+                        <input name="vk" type="text" class="input">
+                        <label for="vk">
+                            <img src="img/vk.png" alt="global">
+                        </label>
+                    </div>
+                    <div class="optional">
+                        <input name="ok" type="text" class="input">
+                        <label for="ok">
+                            <img src="img/odnoklassniki.png" alt="global">
+                        </label>
+                    </div>
+                    <div class="optional">
+                        <input name="facebook" type="text" class="input">
+                        <label for="facebook">
+                            <img src="img/facebook.png" alt="global">
+                        </label>
+                    </div>
+                    <div class="optional">
+                        <input name="instagram" type="text" class="input">
+                        <label for="instagram">
+                            <img src="img/inst.png" alt="global">
+                        </label>
+                    </div>
+                    <div class="optional">
+                        <input name="youtube" type="text" class="input">
+                        <label for="youtube">
+                            <img src="img/youtube.png" alt="global">
+                        </label>
+                    </div>
+                    <div>
+                        <input type="text" class="input lead" placeholder="Руководитель">
+                    </div>
+                    <button class="input button" value="validate">Стать партнёром проекта</button>
+                    <input type="reset" class="cancel" value="Отменить">   
+            </form>
+        </div>
+    </dialog>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="jquery.maskedinput.min.js"></script>
+    <script src="jquery.validate.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
